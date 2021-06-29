@@ -3,7 +3,7 @@
 	$press_cat = get_sub_field('category_to_show');
 ?>
 
-<section class="recent-press module green-bg">
+<section class="recent-press module green-bg<?php if ( $num_posts == 'all' ):?> all-posts<?php endif;?>">
 	<div class="grid-container">
 		
 		<div class="grid-x grid-padding-x align-middle">

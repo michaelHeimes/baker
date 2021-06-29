@@ -134,9 +134,9 @@ header.article-header {
 		right: 0;
 		bottom: 0;
 		background-size: cover;
-		background-position: 59% 50%;
+		background-position: 35% 50%;
 
-		@include breakpoint(medium) {
+		@include breakpoint(tablet) {
 			background-position: 50%;
 		}
 		

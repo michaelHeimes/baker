@@ -4,13 +4,10 @@
 			
 			<div class="left cell small-12 tablet-4 show-for-tablet">
 				
-				<div class="location-wrap">
-					<h2>Press</h2>
-					
+				<div class="location-wrap">					
 					<div class="copy-wrap">
 						<a href="mailto:<?php the_sub_field('press_email');?>"><?php the_sub_field('press_email');?></a>
 					</div>
-					
 				</div>
 				
 			</div>			

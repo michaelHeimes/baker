@@ -20,7 +20,7 @@
 					<?php if( have_rows('cta_button') ):?>
 						<?php while ( have_rows('cta_button') ) : the_row();?>	
 						<div class="cta">
-							<a href="<?php the_field('link');?>" target="_blank">
+							<a href="<?php the_sub_field('link');?>" target="_blank">
 								<div class="grid-container">
 									<div class="grid-x grid-padding-x">
 										

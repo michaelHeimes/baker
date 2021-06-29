@@ -45,5 +45,17 @@
 	
 	endif;?>
 	
+	<?php if ( get_row_layout() == 'volunteer_form' ) : 
+	
+		get_template_part('page-modules/volunteer_form');
+	
+	endif;?>
+
+	<?php if ( get_row_layout() == 'wysiwyg_editor' ) : 
+	
+		get_template_part('page-modules/wysiwyg');
+	
+	endif;?>
+	
 	<?php endwhile;?>
 <?php endif;?>

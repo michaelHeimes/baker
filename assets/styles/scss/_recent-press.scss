@@ -2,6 +2,10 @@
 	padding-top: 2.9em;
 	padding-bottom: 0;
 	
+&.all-posts {
+	padding-bottom: 2.9em;
+}
+	
 	@include breakpoint(medium) {
 		padding-top: 5.8em;
 		padding-bottom: 6em;		
