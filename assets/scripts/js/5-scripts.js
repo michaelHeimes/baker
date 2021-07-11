@@ -19,10 +19,22 @@
 	});
 	
 	$(document).on('click', 'a#menu-toggle', function(){
-		$('header.header').addClass('off-canvas-content is-open-right has-transition-push');
+		
+		if ( $(this).hasClass('clicked') ) {
+			$(this).removeClass('clicked');
+			$('header.header').removeClass('off-canvas-content is-open-right has-transition-push');
+		
+		} else {
+		
+			$(this).addClass('clicked');
+			$('header.header').addClass('off-canvas-content is-open-right has-transition-push');
+		
+		}
+		
 	});
 
 	$(document).on('click', '.js-off-canvas-overlay', function(){
+		$('a#menu-toggle').removeClass('clicked');
 		$('header.header').removeClass('off-canvas-content is-open-right has-transition-push');
 	});
 	
